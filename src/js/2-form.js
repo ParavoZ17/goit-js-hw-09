@@ -6,7 +6,7 @@ const emailInput = form.elements.email;
 const messageTextarea = form.elements.message;
 
 
-document.addEventListener('ContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const savedData = localStorage.getItem(localStorageKey);
   if (savedData) {
     const formData = JSON.parse(savedData);
